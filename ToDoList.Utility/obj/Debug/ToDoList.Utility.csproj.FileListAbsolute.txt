@@ -1,0 +1,4 @@
+D:\Projects\ToDoList\ToDoList.Utility\bin\Debug\ToDoList.Utility.dll
+D:\Projects\ToDoList\ToDoList.Utility\bin\Debug\ToDoList.Utility.pdb
+D:\Projects\ToDoList\ToDoList.Utility\obj\Debug\ToDoList.Utility.dll
+D:\Projects\ToDoList\ToDoList.Utility\obj\Debug\ToDoList.Utility.pdb

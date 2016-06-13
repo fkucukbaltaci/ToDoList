@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDoList.Data", "ToDoList.Data\ToDoList.Data.csproj", "{39179C17-AE41-4233-B743-160EE82AF655}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDoList.Entity", "ToDoList.Entity\ToDoList.Entity.csproj", "{5763822C-E41A-4067-8C65-96CC215FDC01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDoList.Repository", "ToDoList.Repository\ToDoList.Repository.csproj", "{D7031E85-C4B1-405B-AE33-E974D1B856E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDoList.ConsoleTest", "ToDoList.ConsoleTest\ToDoList.ConsoleTest.csproj", "{7F43BEFB-33EF-4036-BC10-8596A4C490B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDoList.Web", "ToDoList.Web\ToDoList.Web.csproj", "{D88A979F-92B1-4706-84DF-8976A2C1C693}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDoList.Utility", "ToDoList.Utility\ToDoList.Utility.csproj", "{AAA8BC56-F75F-4486-A824-0B1D365403BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDoList.Notification", "ToDoList.Notification\ToDoList.Notification.csproj", "{FA4FDAAA-110D-4A21-9A79-34BDE79D493E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{39179C17-AE41-4233-B743-160EE82AF655}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39179C17-AE41-4233-B743-160EE82AF655}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39179C17-AE41-4233-B743-160EE82AF655}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39179C17-AE41-4233-B743-160EE82AF655}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5763822C-E41A-4067-8C65-96CC215FDC01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5763822C-E41A-4067-8C65-96CC215FDC01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5763822C-E41A-4067-8C65-96CC215FDC01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5763822C-E41A-4067-8C65-96CC215FDC01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7031E85-C4B1-405B-AE33-E974D1B856E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7031E85-C4B1-405B-AE33-E974D1B856E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7031E85-C4B1-405B-AE33-E974D1B856E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7031E85-C4B1-405B-AE33-E974D1B856E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F43BEFB-33EF-4036-BC10-8596A4C490B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F43BEFB-33EF-4036-BC10-8596A4C490B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F43BEFB-33EF-4036-BC10-8596A4C490B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F43BEFB-33EF-4036-BC10-8596A4C490B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D88A979F-92B1-4706-84DF-8976A2C1C693}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D88A979F-92B1-4706-84DF-8976A2C1C693}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D88A979F-92B1-4706-84DF-8976A2C1C693}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D88A979F-92B1-4706-84DF-8976A2C1C693}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAA8BC56-F75F-4486-A824-0B1D365403BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAA8BC56-F75F-4486-A824-0B1D365403BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAA8BC56-F75F-4486-A824-0B1D365403BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAA8BC56-F75F-4486-A824-0B1D365403BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA4FDAAA-110D-4A21-9A79-34BDE79D493E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA4FDAAA-110D-4A21-9A79-34BDE79D493E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA4FDAAA-110D-4A21-9A79-34BDE79D493E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA4FDAAA-110D-4A21-9A79-34BDE79D493E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

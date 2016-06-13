@@ -1,0 +1,17 @@
+D:\Projects\ToDoList\ToDoList.Notification\bin\Debug\ToDoList.Notification.dll
+D:\Projects\ToDoList\ToDoList.Notification\bin\Debug\ToDoList.Notification.pdb
+D:\Projects\ToDoList\ToDoList.Notification\bin\Debug\ToDoList.Entity.dll
+D:\Projects\ToDoList\ToDoList.Notification\bin\Debug\ToDoList.Repository.dll
+D:\Projects\ToDoList\ToDoList.Notification\bin\Debug\ToDoList.Data.dll
+D:\Projects\ToDoList\ToDoList.Notification\bin\Debug\EntityFramework.dll
+D:\Projects\ToDoList\ToDoList.Notification\bin\Debug\EntityFramework.SqlServer.dll
+D:\Projects\ToDoList\ToDoList.Notification\bin\Debug\ToDoList.Utility.dll
+D:\Projects\ToDoList\ToDoList.Notification\bin\Debug\ToDoList.Entity.pdb
+D:\Projects\ToDoList\ToDoList.Notification\bin\Debug\ToDoList.Repository.pdb
+D:\Projects\ToDoList\ToDoList.Notification\bin\Debug\ToDoList.Data.pdb
+D:\Projects\ToDoList\ToDoList.Notification\bin\Debug\EntityFramework.xml
+D:\Projects\ToDoList\ToDoList.Notification\bin\Debug\EntityFramework.SqlServer.xml
+D:\Projects\ToDoList\ToDoList.Notification\bin\Debug\ToDoList.Utility.pdb
+D:\Projects\ToDoList\ToDoList.Notification\obj\Debug\ToDoList.Notification.csprojResolveAssemblyReference.cache
+D:\Projects\ToDoList\ToDoList.Notification\obj\Debug\ToDoList.Notification.dll
+D:\Projects\ToDoList\ToDoList.Notification\obj\Debug\ToDoList.Notification.pdb

@@ -1,0 +1,14 @@
+D:\Projects\ToDoList\ToDo.Repository\bin\Debug\ToDo.Repository.dll.config
+D:\Projects\ToDoList\ToDo.Repository\bin\Debug\ToDo.Repository.dll
+D:\Projects\ToDoList\ToDo.Repository\bin\Debug\ToDo.Repository.pdb
+D:\Projects\ToDoList\ToDo.Repository\bin\Debug\EntityFramework.dll
+D:\Projects\ToDoList\ToDo.Repository\bin\Debug\EntityFramework.SqlServer.dll
+D:\Projects\ToDoList\ToDo.Repository\bin\Debug\ToDoList.Data.dll
+D:\Projects\ToDoList\ToDo.Repository\bin\Debug\ToDoList.Entity.dll
+D:\Projects\ToDoList\ToDo.Repository\bin\Debug\ToDoList.Data.pdb
+D:\Projects\ToDoList\ToDo.Repository\bin\Debug\ToDoList.Entity.pdb
+D:\Projects\ToDoList\ToDo.Repository\bin\Debug\EntityFramework.xml
+D:\Projects\ToDoList\ToDo.Repository\bin\Debug\EntityFramework.SqlServer.xml
+D:\Projects\ToDoList\ToDo.Repository\obj\Debug\ToDo.Repository.csprojResolveAssemblyReference.cache
+D:\Projects\ToDoList\ToDo.Repository\obj\Debug\ToDo.Repository.dll
+D:\Projects\ToDoList\ToDo.Repository\obj\Debug\ToDo.Repository.pdb

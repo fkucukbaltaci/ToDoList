@@ -1,0 +1,113 @@
+﻿@model ToDoList.Web.Models.TaskModel
+@{
+    ViewBag.Title = ViewBag.ActionMode + " Task";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section CustomHead{
+    <style type="text/css">
+        .validation-summary-valid.alert-danger {
+            display: none;
+        }
+    </style>
+}
+
+@section scripts{
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $("#formDeleteTask").submit(function (e) {
+                var currentForm = this;
+                e.preventDefault();
+                bootbox.confirm("Are you sure want to delete?", function (result) {
+                    if (result) {
+                        currentForm.submit();
+                    }
+                });
+            });
+        });
+
+
+    </script>
+}
+
+<ol class="breadcrumb">
+    <li><a href="/Todo/">Home</a></li>
+    <li><a href="/Task/@ViewBag.TodoId">Task List</a></li>
+    <li class="active">@ViewBag.ActionMode Task</li>
+</ol>
+<h2>
+    <span>@ViewBag.ActionMode Task</span>
+
+    @if (ViewBag.ActionMode == "Edit")
+    {
+        using (Html.BeginForm("Delete", "Task", new { TodoId = ViewBag.TodoId, TaskId = Model.Id }, FormMethod.Post, new { @id = "formDeleteTask", @style = "display:inline;" }))
+        {
+            @Html.AntiForgeryToken()
+            <button type="submit" class="btn btn-danger pull-right" id="btnDelete">Delete</button>
+        }
+    }
+</h2>
+
+
+@using (Html.BeginForm("AddEdit", "Task", new { TodoId = ViewBag.TodoId, TaskId = Model.Id }, FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+
+    @Html.ValidationSummary(false, "", new { @class = "alert alert-danger", @role = "alert" })
+    if (ViewBag.CustomValidationSummary != "")
+    {
+        <div class="alert alert-danger" role="alert">
+            @ViewBag.CustomValidationSummary
+        </div>
+    }
+    if (ViewBag.SuccessMessage != "")
+    {
+        <div class="alert alert-success" role="alert">
+            @ViewBag.SuccessMessage
+        </div>
+    }
+    @Html.HiddenFor(m => m.Id)
+
+    <div class="form-group">
+        <label>Name:</label>
+        @Html.TextBox("Name", Model.Name, new { @class = "form-control", @role = "form" })
+    </div>
+    <div class="form-group">
+        <label>Description:</label>
+        @Html.TextArea("Description", Model.Description, new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        <label>Start Time:</label>
+
+        <div class="form-group row">
+            <div class="col-md-1">
+                @Html.DropDownList("StartDay", ViewBag.dayList as SelectList, new { @class = "form-control" })
+            </div>
+            <div class="col-md-1">
+                @Html.DropDownList("StartMonth", ViewBag.monthList as SelectList, new { @class = "form-control" })
+            </div>
+            <div class="col-md-1">
+                @Html.TextBox("StartYear", Model.StartYear, new { @class = "form-control" })
+            </div>
+            <div class="col-md-1">
+                @Html.TextBox("StartHourMinute", Model.StartHourMinute, new { @class = "form-control" })
+            </div>
+        </div>
+
+    </div>
+    <div class="form-group">
+        <label>Notify Before</label>
+        <div class="form-group row">
+            <div class="col-md-1">
+                @Html.TextBox("NotifyBeforeMin", Model.NotifyBeforeMin, new { @class = "form-control" })
+            </div>
+            <span class="col-md-1 form-control-static" style="vertical-align:bottom;">minutes</span>
+        </div>
+
+    </div>
+    <div class="form-group">
+        <label>@Html.CheckBox("IsDone", Model.IsDone) Done</label>
+    </div>
+    <button type="submit" class="btn btn-default">Save</button>
+}
+

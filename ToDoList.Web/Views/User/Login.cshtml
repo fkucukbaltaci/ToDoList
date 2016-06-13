@@ -1,0 +1,40 @@
+﻿@model ToDoList.Entity.User
+@{
+    ViewBag.Title = "Add";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section CustomHead{
+    <style type="text/css">
+        .validation-summary-valid.alert-danger {
+            display: none;
+        }
+    </style>
+}
+
+<h2>Login</h2>
+
+@using (Html.BeginForm("Login", "User", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+
+
+    if (ViewBag.CustomValidationSummary != "")
+    {
+        <div class="alert alert-danger" role="alert">
+            @ViewBag.CustomValidationSummary
+        </div>
+    }
+
+    <div class="form-group">
+        <label>Email:</label>
+        @Html.TextBox("Email", "", new { @class = "form-control" })
+    </div>
+    <div class="form-group">
+        <label>Password:</label>
+        @Html.Password("Password", "", new { @class = "form-control" })
+    </div>
+
+    <button type="submit" class="btn btn-default">Login</button>  <a href="@Url.Action("Add")">Register</a>
+}
+

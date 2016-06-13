@@ -1,0 +1,16 @@
+D:\Projects\ToDoList\ToDoList.Repository\bin\Debug\ToDoList.Repository.dll.config
+D:\Projects\ToDoList\ToDoList.Repository\bin\Debug\ToDoList.Repository.dll
+D:\Projects\ToDoList\ToDoList.Repository\bin\Debug\ToDoList.Repository.pdb
+D:\Projects\ToDoList\ToDoList.Repository\bin\Debug\ToDoList.Data.dll
+D:\Projects\ToDoList\ToDoList.Repository\bin\Debug\ToDoList.Entity.dll
+D:\Projects\ToDoList\ToDoList.Repository\bin\Debug\EntityFramework.dll
+D:\Projects\ToDoList\ToDoList.Repository\bin\Debug\EntityFramework.SqlServer.dll
+D:\Projects\ToDoList\ToDoList.Repository\bin\Debug\ToDoList.Utility.dll
+D:\Projects\ToDoList\ToDoList.Repository\bin\Debug\ToDoList.Data.pdb
+D:\Projects\ToDoList\ToDoList.Repository\bin\Debug\ToDoList.Entity.pdb
+D:\Projects\ToDoList\ToDoList.Repository\bin\Debug\EntityFramework.xml
+D:\Projects\ToDoList\ToDoList.Repository\bin\Debug\EntityFramework.SqlServer.xml
+D:\Projects\ToDoList\ToDoList.Repository\bin\Debug\ToDoList.Utility.pdb
+D:\Projects\ToDoList\ToDoList.Repository\obj\Debug\ToDoList.Repository.csprojResolveAssemblyReference.cache
+D:\Projects\ToDoList\ToDoList.Repository\obj\Debug\ToDoList.Repository.dll
+D:\Projects\ToDoList\ToDoList.Repository\obj\Debug\ToDoList.Repository.pdb

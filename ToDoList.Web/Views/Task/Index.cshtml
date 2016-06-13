@@ -1,0 +1,62 @@
+﻿
+@{
+    ViewBag.Title = ViewBag.Header;
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section scripts{
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $("#formDeleteTodo").submit(function (e) {
+                var currentForm = this;
+                e.preventDefault();
+                bootbox.confirm("Are you sure want to delete?", function (result) {
+                    if (result) {
+                        currentForm.submit();
+                    }
+                });
+            });
+        });
+
+
+    </script>
+}
+
+<ol class="breadcrumb">
+    <li><a href="/Todo/">Home</a></li>
+    <li class="active">Task List</li>
+</ol>
+<h2>
+    <span>@ViewBag.Header</span>
+
+    @using (Html.BeginForm("Delete", "Todo", new { TodoId = ViewBag.TodoId }, FormMethod.Post, new { @id = "formDeleteTodo", @style = "display:inline;" }))
+    {
+        @Html.AntiForgeryToken()
+        <button type="submit" class="btn btn-danger pull-right" id="btnDelete">Delete</button>
+    }
+    <a href="@ToDoList.Utility.Url.TaskEditUrl(ViewBag.TodoId,0)" class="btn btn-default pull-right" type="btn" style="margin-right:5px;">New Task</a>
+</h2>
+
+<div class="list-group">
+    @foreach (var item in ViewBag.TaskList)
+    {
+        <a href="@ToDoList.Utility.Url.TaskEditUrl(ViewBag.TodoId,item.Id)" class="list-group-item">
+            @if (item.IsDone)
+            {
+                <span style="text-decoration:line-through;">@item.Name</span>
+            }
+            else
+            {
+                @item.Name
+            }
+        </a>
+    }
+</div>
+
+@if (ViewBag.TaskList.Count == 0)
+{
+    <div class="alert alert-warning">You don't have a task in this list.</div>
+}
+
+

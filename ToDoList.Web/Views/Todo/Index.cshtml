@@ -1,0 +1,61 @@
+﻿
+@{
+    ViewBag.Title = "To-Do List";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section scripts{
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $("#btnNewTodoList").click(function (e) {
+                bootbox.prompt("New To-Do List Name", function (TodoName) {
+                    if (TodoName === null) {
+
+                    } else {
+
+                        var _data = { name: TodoName };
+
+                        $.ajax({
+                            url: "@Url.Action("Save","Todo")",
+                            data: JSON.stringify(_data),
+                            type: "POST",
+                            contentType: "application/json;charset=utf-8",
+                            dataType: "json",
+                            statusCode: {
+                                200: function () {
+                                    document.location.reload();
+                                },
+                                404: function () {
+
+                                }
+                            }
+                        });
+                    }
+                });
+            });
+        });
+
+
+    </script>
+}
+
+<ol class="breadcrumb">
+    <li class="active">Home</li>
+</ol>
+<h2>
+    <span>@ViewBag.Title</span>
+    <button type="button" class="btn btn-default pull-right" id="btnNewTodoList">New Todo List</button>
+</h2>
+
+
+<div class="list-group">
+    @foreach (var item in ViewBag.Todos)
+    {
+        <a class="list-group-item" href="@Url.Action(item.Id.ToString(), "Task")">@item.Name</a>
+    }
+</div>
+@if (ViewBag.Todos.Count == 0)
+{
+    <div class="alert alert-warning">You don't have a to-do list.</div>
+}
+

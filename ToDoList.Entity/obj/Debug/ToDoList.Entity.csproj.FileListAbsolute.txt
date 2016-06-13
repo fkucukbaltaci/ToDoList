@@ -1,0 +1,4 @@
+D:\Projects\ToDoList\ToDoList.Entity\bin\Debug\ToDoList.Entity.dll
+D:\Projects\ToDoList\ToDoList.Entity\bin\Debug\ToDoList.Entity.pdb
+D:\Projects\ToDoList\ToDoList.Entity\obj\Debug\ToDoList.Entity.dll
+D:\Projects\ToDoList\ToDoList.Entity\obj\Debug\ToDoList.Entity.pdb
